@@ -78,7 +78,7 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	// Tear down Function
+	// Tear down Function (closes connections)
 	@AfterTest
 	public void tearDown() throws IOException {
 		driver.close();
